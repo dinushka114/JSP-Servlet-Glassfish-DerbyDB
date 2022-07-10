@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    
+    <style>
+        #login_title {
+            text-align: center;
+        }
+        
+ 
+        #container {
+    text-align: center;    
+        }
+
+        #container .form-container {
+            display: inline-block;
+        }
+
+        #container form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 20px;
+        }
+
+        #container form .column {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+
+        #container form .column label {
+            padding: 2px;
+            text-align: right;
+            margin: 5px;
+        }
+
+        #container form .column input, 
+        #container form .column textarea {
+            align-self: flex-start;
+            width: 200px;
+            margin:5px;
+        }
+        
+        #container form input[type="submit"]{
+            margin-top: 20px;
+            border-radius:50px;
+            border:none;
+            text-align: center;
+            background-color: lightblue;
+            padding:10px;
+            display:block;
+            width:180px;
+            margin-left:auto;
+            margin-right:auto;
+            text-decoration: none;
+            color:black;
+        }
+
+    </style>
+    
+    <body>
+        <h1 id="login_title">Student Personal Information</h1>
+
+        <div id="container">
+            <div class="form-container">
+                <form action="student-validate" method="post">
+                    <div class="column">
+                        <label for="text1">Name: </label>
+                        <label for="text2">Student ID: </label>
+                    </div>
+                    <div class="column">
+                        <input type="text" name="student_name" />
+                        <input type="text" name="student_id" />
+                        <input type="submit" name="submit" value="Submit" />
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
